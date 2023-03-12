@@ -29,16 +29,20 @@ ul {
 }
 
 .label {
+    margin-top: 1%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     transition: .3s;
     color: blue;
+    border-bottom: .1em solid gray;
 }
 
 .text {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 .plus {
@@ -77,9 +81,9 @@ ul {
     transition: 1s;
 }
 
-.list-item.label.input:checked ~ .hidden-img {
-    max-height: 10%;
-    max-width: 10%;
+.label.input:checked > .hidden-img {
+    max-height: 30%;
+    max-width: 30%;
 }
 
 .list-item > .label:hover > .hidden-img {
