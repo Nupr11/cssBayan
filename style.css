@@ -76,6 +76,7 @@ img {
     border-radius: 2%;
     align-self: center;
     transition: 1s;
+    opacity: 1;
 }
 
 .label > .input:checked ~ .hidden-img {
@@ -95,6 +96,30 @@ img {
 .label > .input:checked + .text  {
     color: black;
 }
+
+.label:active  {
+    transition: 1s;
+    animation: opa 3s linear;
+    color: blue;
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0.8;
+        color: blue;
+    }
+
+    50% {
+        opacity: 0.3;
+        color: blue;
+    }
+
+    100% {
+        opacity: 0.9;
+        color: blue;
+    }
+}
+
 
 @media screen and (max-width: 820px) {
     
