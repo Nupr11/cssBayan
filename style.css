@@ -86,6 +86,7 @@ img {
 
 .label > .input:checked + span > .plus , .label:hover > span > .plus {
     transform: rotate(45deg);
+    animation: opa 3s linear;
 }
 
 .label:hover > .hidden-img {
